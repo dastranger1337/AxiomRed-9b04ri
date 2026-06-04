@@ -1,0 +1,29 @@
+# Dependencies
+node_modules/
+frontend/.expo/
+frontend/dist/
+backend/__pycache__/
+backend/*.pyc
+backend/.pytest_cache/
+
+# Build outputs
+*.log
+*.pid
+.DS_Store
+
+# Local cache / state
+/app/runtime_workspace/
+/tmp/
+.cache/
+
+# Editor
+.vscode/
+.idea/
+
+# Keep .env files as they are protected per platform conventions
+# (Do NOT ignore /backend/.env or /frontend/.env)
+
+# Wordlists are large — not committed
+backend/wordlists/
+
+# Keep .emergent (platform-managed)
