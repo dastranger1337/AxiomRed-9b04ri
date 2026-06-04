@@ -12,7 +12,7 @@ backend/.pytest_cache/
 .DS_Store
 
 # Local cache / state
-/app/runtime_workspace/
+runtime_workspace/
 /tmp/
 .cache/
 
