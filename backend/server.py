@@ -1156,10 +1156,13 @@ EMERGENT_MODELS = {
         {"id": "openspace-mini",     "label": "OpenSpace Mini",     "tier": "fast"},
     ],
     "lovable": [
-        {"id": "lovable-default",                "label": "Lovable Default",         "tier": "best"},
-        {"id": "google/gemini-2.5-flash",        "label": "Lovable · Gemini Flash",  "tier": "fast"},
-        {"id": "openai/gpt-5-mini",              "label": "Lovable · GPT-5 mini",    "tier": "fast"},
-        {"id": "anthropic/claude-sonnet-4-5",    "label": "Lovable · Claude Sonnet", "tier": "deep"},
+        {"id": "google/gemini-3.1-pro-preview",  "label": "Lovable · Gemini 3.1 Pro",   "tier": "deep"},
+        {"id": "google/gemini-3.5-flash",        "label": "Lovable · Gemini 3.5 Flash", "tier": "best"},
+        {"id": "google/gemini-2.5-flash",        "label": "Lovable · Gemini 2.5 Flash", "tier": "fast"},
+        {"id": "google/gemini-2.5-pro",          "label": "Lovable · Gemini 2.5 Pro",   "tier": "deep"},
+        {"id": "openai/gpt-5",                   "label": "Lovable · GPT-5",            "tier": "deep"},
+        {"id": "openai/gpt-5-mini",              "label": "Lovable · GPT-5 mini",       "tier": "fast"},
+        {"id": "openai/gpt-5-nano",              "label": "Lovable · GPT-5 nano",       "tier": "fast"},
     ],
 }
 

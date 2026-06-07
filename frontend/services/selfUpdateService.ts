@@ -154,10 +154,13 @@ export const MODELS = [
   { id: 'openspace/openspace-pro',     name: 'OpenSpace Pro',     tier: 'pro', description: 'OpenSpace AI deep-reasoning model' },
   { id: 'openspace/openspace-mini',    name: 'OpenSpace Mini',    tier: 'fast', description: 'OpenSpace AI low-latency model' },
   // ── Lovable AI Gateway (configure key in Config → ENV VARS) ──
-  { id: 'lovable/lovable-default',                name: 'Lovable Default',         tier: 'pro',  description: 'Lovable AI Gateway default — requires LOVABLE_API_KEY' },
-  { id: 'lovable/google/gemini-2.5-flash',        name: 'Lovable · Gemini Flash',  tier: 'fast', description: 'Gemini 2.5 Flash via Lovable AI Gateway' },
-  { id: 'lovable/openai/gpt-5-mini',              name: 'Lovable · GPT-5 mini',    tier: 'fast', description: 'GPT-5 mini via Lovable AI Gateway' },
-  { id: 'lovable/anthropic/claude-sonnet-4-5',    name: 'Lovable · Claude Sonnet', tier: 'pro',  description: 'Claude Sonnet 4.5 via Lovable AI Gateway' },
+  { id: 'lovable/google/gemini-3.5-flash',        name: 'Lovable · Gemini 3.5 Flash', tier: 'pro',  description: 'Gemini 3.5 Flash via Lovable AI Gateway — requires LOVABLE_API_KEY' },
+  { id: 'lovable/google/gemini-3.1-pro-preview',  name: 'Lovable · Gemini 3.1 Pro',   tier: 'pro',  description: 'Gemini 3.1 Pro Preview via Lovable AI Gateway' },
+  { id: 'lovable/google/gemini-2.5-flash',        name: 'Lovable · Gemini 2.5 Flash', tier: 'fast', description: 'Gemini 2.5 Flash via Lovable AI Gateway' },
+  { id: 'lovable/google/gemini-2.5-pro',          name: 'Lovable · Gemini 2.5 Pro',   tier: 'pro',  description: 'Gemini 2.5 Pro via Lovable AI Gateway' },
+  { id: 'lovable/openai/gpt-5',                   name: 'Lovable · GPT-5',            tier: 'pro',  description: 'GPT-5 via Lovable AI Gateway' },
+  { id: 'lovable/openai/gpt-5-mini',              name: 'Lovable · GPT-5 mini',       tier: 'fast', description: 'GPT-5 mini via Lovable AI Gateway' },
+  { id: 'lovable/openai/gpt-5-nano',              name: 'Lovable · GPT-5 nano',       tier: 'fast', description: 'GPT-5 nano via Lovable AI Gateway' },
 ];
 
 export async function getSystemPrompt(): Promise<string> {
