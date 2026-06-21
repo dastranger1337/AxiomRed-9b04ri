@@ -44,3 +44,6 @@ backend/wordlists/
 .env
 .env.*
 *.env
+
+# Local single-file artifact
+full_app_artifact.txt
