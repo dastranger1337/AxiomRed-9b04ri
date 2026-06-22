@@ -1,49 +1,64 @@
 # ──────────────────────────────────────────────────────────────────────
-# Axiom Red-Team — .gitignore
+# Axiom Red-Team CLI — .gitignore
 # ──────────────────────────────────────────────────────────────────────
 
-# Dependencies
-node_modules/
-frontend/.expo/
-frontend/dist/
-backend/__pycache__/
-backend/*.pyc
-backend/.pytest_cache/
-.ruff_cache/
+# Python
+__pycache__/
+*.py[cod]
+*$py.class
+*.so
+.Python
+build/
+dist/
+*.egg-info/
+.eggs/
+pip-log.txt
+MANIFEST
 
-# Build outputs
-*.log
-*.pid
-.DS_Store
+# Virtual environments
+venv/
+env/
+ENV/
+.venv
 
-# Local cache / scratch dirs
-runtime_workspace/
-.cache/
-
-# Editor
+# IDE & Editor
 .vscode/
 .idea/
+*.swp
+*.swo
+*~
+.DS_Store
+Thumbs.db
 
-# NOTE: .env files ARE tracked intentionally — the Emergent platform
-# expects MONGO_URL / DB_NAME / EXPO_PUBLIC_* to come with the repo.
-# Sensitive overrides should go in `.env.local` (ignored below).
-*.env.local
+# Environment & Configuration
+# IMPORTANT: .env contains sensitive API keys — never commit!
+.env
 .env.local
-
-# Secret material that should never be committed
+.env.*.local
 credentials.json
+
+# Secrets
 *.pem
 *.key
 .credentials
 
-# Wordlists (rockyou is 130 MB — installed at runtime instead)
+# Cache & Build
+*.log
+*.pid
+.ruff_cache/
+.pytest_cache/
+.mypy_cache/
+.cache/
+
+# Runtime
+runtime_workspace/run-*/
+*.tmp
+*.temp
+*.bak
+
+# Wordlists (installed at runtime)
 backend/wordlists/
+wordlists/
 
-# Platform-managed (keep)
-# .emergent/
-.env
-.env.*
-*.env
-
-# Local single-file artifact
+# Artifacts
 full_app_artifact.txt
